@@ -1,0 +1,65 @@
+input {
+    border-radius: 0;
+    border: 1px solid #ccc;
+}
+
+.film {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.film label {
+    font-weight: 600;
+}
+
+.antall {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 30px 0;
+}
+
+.antall label {
+    display: inline-block;
+    text-align: left;
+    font-weight: 600;
+    float: none;
+    width: 50px;
+}
+
+.antall input {
+    display: inline-block;
+    float: none;
+    width: 30px;
+}
+
+.container label {
+    display: inline-block;
+    float: none;
+    width: 90px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.container input {
+    display: inline-block;
+    float: none;
+    width: auto;
+}
+
+.wrapper-form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.main-inputs-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.error-message {
+    color: #ff0000;
+}

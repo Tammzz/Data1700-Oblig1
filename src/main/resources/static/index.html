@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kinobilletter</title>
+    <script src="oblig1.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1 class="h1">Bestilling av kinobilletter</h1>
+<form id="billettForm" action="#">
+
+    <!-- Film selection -->
+    <div class="wrapper-form">
+        <div class="film">
+            <label for="film">Velg film:</label>
+            <select id="film" class="form-select" onblur="checkFilmSelectionInput()">
+                <option value="" disabled selected>Velg film her</option>
+            </select>
+        </div>
+        <span id="filmErrorMsg" class="error-message"></span>
+    </div>
+
+    <!-- Number of tickets -->
+    <div class="wrapper-form">
+        <div class="antall">
+            <label for="antall">Antall</label>
+            <input id="antall" type="number" onblur="checkBillettCountInput()" />
+            <span id="antallErrorMsg" class="error-message"></span>
+        </div>
+    </div>
+
+    <div class="main-inputs-wrapper">
+    <!-- First name input -->
+    <div class="wrapper-form">
+        <div class="container">
+            <label for="fornavn">Fornavn</label>
+            <input id="fornavn" type="text" required onblur="checkNameInput()">
+        </div>
+        <span id="fornavnErrorMsg" class="error-message"></span>
+    </div>
+
+    <!-- Surname input -->
+    <div class="wrapper-form">
+        <div class="container">
+            <label for="etternavn">Etternavn</label>
+            <input id="etternavn" type="text" required onblur="checkSurnameInput()">
+        </div>
+        <span id="etternavnErrorMsg" class="error-message"></span>
+    </div>
+
+    <!-- Phone nr input -->
+    <div class="wrapper-form">
+        <div class="container">
+            <label for="telefonnr">Telefonnr</label>
+            <input id="telefonnr" type="number" required onblur="checkPhoneInput()">
+        </div>
+        <span id="tlfErrorMsg" class="error-message"></span>
+    </div>
+
+    <!-- Email input -->
+    <div class="wrapper-form">
+        <div class="container">
+            <label for="epost">Epost</label>
+            <input id="epost" type="email" required onblur="checkMailInput()">
+            <p id="epostError"></p>
+        </div>
+        <span id="epostErrorMsg" class="error-message"></span>
+    </div>
+    </div>
+
+    <!-- Purchase ticket button -->
+    <input type="button"
+           value="Kjøp billett"
+           onclick="addBillett()"
+           id="kjopBillett"
+    />
+
+    <!-- All tickets list -->
+    <h2 class="h2">Alle billetter</h2>
+
+    <div>
+        <ol id="alleBilletter"></ol>
+    </div>
+
+    <!-- Delete tickets button -->
+    <button type="button" onclick="slettAlleBilletter()" id="slettBillett">
+        Slett billetter
+    </button>
+</form>
+
+</body>
+</html>
