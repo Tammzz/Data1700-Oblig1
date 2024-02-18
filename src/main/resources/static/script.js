@@ -47,7 +47,6 @@ function checkInputs() {
     return (
         checkFilmSelectionInput() &
         checkBillettCountInput() &
-        checkMailInput() &
         checkPhoneInput() &
         checkMailInput() &
         checkNameInput() &
