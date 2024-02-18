@@ -4,8 +4,11 @@ Coded by Tammzz (s355792)
 This simple yet efficient web application allows users to easily browse through available movies and book tickets.
 
 Movie Listings: Browse through a variety of movies currently showing.
+
 Ticket Selection: Choose the number of tickets required.
+
 Personal Details: Enter your full name, phone number, and email address.
+
 Order Submission: Complete your order with a simple click.
 
 Inputs undergo validation as follows:
